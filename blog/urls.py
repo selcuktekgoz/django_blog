@@ -1,4 +1,7 @@
 from django.urls import path, include
-from blog.views import iletisim
+from blog.views import iletisim, anasayfa
 
-urlpatterns = [path("", iletisim), path("iletisim/", iletisim)]
+urlpatterns = [
+    path("", anasayfa),
+    path("iletisim/", iletisim),
+]
